@@ -6,12 +6,12 @@ from multiprocessing import Pool
 from kitti_utils import *
 
 calib_root = './utils/calib_cam_to_cam/'
-data_root = sys.argv[1]
-disp1_root = osp.join(data_root, 'training/disp_occ_0')
-disp2_root = osp.join(data_root, 'training/disp_occ_1')
-op_flow_root = osp.join(data_root, 'training/flow_occ')
+# data_root = sys.argv[1]
+disp1_root = '/shared/xudongliu/code/hd3/prediction/pre_KT_scene/disp_0'
+disp2_root = '/shared/xudongliu/code/hd3/disp_1_test'
+op_flow_root = '/shared/xudongliu/code/hd3/prediction/pre_KT_scene/flow'
 
-save_path = sys.argv[2]
+save_path = sys.argv[1]
 
 
 def process_one_frame(idx):
